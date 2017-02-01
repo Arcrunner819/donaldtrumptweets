@@ -20,7 +20,7 @@ thedonald.write(soup.find('div', {'class':'ProfileHeaderCard'}).find('p').text +
 thedonald.close()
 
 i = str(1).encode('utf-8').decode('utf-8')
-thedonald = io.open('dumbassdonald.txt','a', encoding='utf-8')
+thedonald = io.open('donald_trump_tweets.txt','a', encoding='utf-8')
 
 for tweets in soup.findAll('div', {'class':'content'}):
     thedonald.write(tweets.find('p').text + '\n\n')
